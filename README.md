@@ -1,15 +1,18 @@
 ####将webpack-dev-server产出在内存的文件夹输出到指定目录
 
 ####Output webpack-dev-server output to the specified folder in the folder
-		1、npm install webpack-dev-server-output --save-dev
-	
-		2、
-		const WebpackDevServerOutput = require('webpack-dev-server-output');
+		
+	1. npm install webpack-dev-server-output --save-dev
 
-		new WebpackDevServerOutput({
+
+	2. const WebpackDevServerOutput = require('webpack-dev-server-output');
+
+	3. new WebpackDevServerOutput({
     		path: 'output-path',
-    		isDel: true | false
-		});
+    		isDel: [true | false]
+	});
+
+
 
 
 path: Specify file output directory(<font color="red">full path</font>) (指定文件产出目录)
